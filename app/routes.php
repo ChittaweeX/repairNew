@@ -13,5 +13,9 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return Redirect::to('page/home');
 });
+
+
+Route::controller('page', 'MainController');
+Route::controller('manage', 'ManageController');
